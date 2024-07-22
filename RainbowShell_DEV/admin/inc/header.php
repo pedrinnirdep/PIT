@@ -20,7 +20,7 @@ if(isset($_SESSION['msg'])){
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- jQuery -->
-  <script src="scripts/js/jquery-2.0.0.min.js" type="text/javascript"></script>
+  <script src="scripts/js/jquery-3.7.1.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 
   <!-- Bootstrap4 files-->
@@ -72,7 +72,7 @@ if(isset($_SESSION['msg'])){
         <a href="index.php?classe=Compra&acao=all" class="list-group-item list-group-item-action bg-light">Compra</a>
         <a href="index.php?classe=ProdutosCompra&acao=all" class="list-group-item list-group-item-action bg-light">Produtos Compra</a>
         <a href="index.php?classe=Estoque&acao=all" class="list-group-item list-group-item-action bg-light">Estoque</a>
-        <a href="index.php?classe=Relatorio&acao=RelatorioData&filtro=0&datainicio=2019-09-03&datafim=2019-10-03" class="list-group-item list-group-item-action bg-light">Relatórios</a>
+        <!-- <a href="index.php?classe=Relatorio&acao=RelatorioData&filtro=0&datainicio=2019-09-03&datafim=2019-10-03" class="list-group-item list-group-item-action bg-light">Relatórios</a> -->
       </div>
     </div>
     <!-- /#sidebar-wrapper -->

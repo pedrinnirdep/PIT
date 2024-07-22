@@ -129,20 +129,25 @@ $dados = $produtos->listarViewProdutos($_GET['id']);
 
 			var e = document.getElementById("cor");
 			var cor = e.options[e.selectedIndex].text;
+			//console.log(cor);
 
 			var e = document.getElementById("tamanho");
 			var tamanho = e.options[e.selectedIndex].text;
+			//console.log(tamanho);
 
 			var e = document.getElementById("quantidade");
 			var quantidade = e.options[e.selectedIndex].text;
+			//console.log(quantidade);
 
 			var id = $("#idProduto").val();
+			//console.log(id);
 
 			if(cor == "" || tamanho == "" || id == "" || quantidade == ""){
 				$("#alertas").html("<div class='alert alert-danger'>Nem todos os valores estão preenchidos!</div>");
 			} else{
 
 				var dt = "action=adicionar_carrinho&cor="+cor+"&tamanho="+tamanho+"&id="+id+"&quantidade="+quantidade;
+				console.log(dt);
 
 				$.ajax({
 					type: "POST",
@@ -151,7 +156,7 @@ $dados = $produtos->listarViewProdutos($_GET['id']);
 					success: function(data){
 						setTimeout(function(){// wait for 5 secs(2)
 							location.reload(); // then reload the page.(3)
-						}, 2000); 
+						}, 600); 
 					}
 				});
 			}

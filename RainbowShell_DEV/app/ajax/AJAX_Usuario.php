@@ -69,3 +69,4 @@ else if(isset($_POST["action"]) && $_POST["action"] == 'verifica_email')
 }
 
 ?>
+

@@ -615,8 +615,40 @@ $(document).ready(function(){
 		}
 	}
 	
+	function buscaEndereco(cep) {
+        $.ajax({
+            url: `https://viacep.com.br/ws/${cep}/json/`,
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                if (!data.erro) {
+                    $("#logradouro_modal").val(data.logradouro);
+                    $("#bairro_modal").val(data.bairro);
+                    $("#cidade_modal").val(data.localidade);
+                    $("#uf_modal").val(data.uf);
+                } else {
+                    alert("CEP não encontrado.");
+                }
+            },
+            error: function() {
+                alert("Erro ao consultar o CEP.");
+            }
+        });
+    }
 
-	
+    // Evento de mudança no campo de CEP
+    $("#cep_modal").on("blur", function() {
+        var cep = $(this).val().replace(/\D/g, '');
+        if (cep !== "") {
+            var validacep = /^[0-9]{8}$/;
+            if (validacep.test(cep)) {
+                buscaEndereco(cep);
+            } else {
+                alert("Formato de CEP inválido.");
+            }
+        }
+    });
+
 </script>
 
 

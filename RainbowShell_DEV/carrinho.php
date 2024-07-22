@@ -83,16 +83,16 @@ $moeda="currency=BRL";
 				<div class="card p-4">
 					<dl class="dlist-align">
 					  <dt>Total: </dt>
-					  <dd class="text-right" id="valor-total"><?=$valorinicial?>,00</dd>
+					  <dd class="text-right" id="valor-total">R$<?=$valorinicial?>,00</dd>
 					</dl>
 					<dl class="dlist-align">
 					  <dt>Frete:</dt>
 					  
-					  <dd class="text-right"><?=$frete?>,00</dd>
+					  <dd class="text-right">R$<?=$frete?>,00</dd>
 					</dl>
 					<dl class="dlist-align h4">
 					  <dt>Total:</dt>
-					  <dd class="text-right text-info"><strong><?=$valorinicial+$frete?>,00</strong></dd>
+					  <dd class="text-right text-info"><strong>R$<?=$valorinicial+$frete?>,00</strong></dd>
 					</dl>
 					<hr>
 					

@@ -38,7 +38,7 @@ if(isset($_GET['limpaCarrinho'])){
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <!-- jQuery -->
-<script src="scripts/js/jquery-2.0.0.min.js" type="text/javascript"></script>
+<script src="scripts/js/jquery-3.7.1.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 
 <!-- Bootstrap4 files-->
